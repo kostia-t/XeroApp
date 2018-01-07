@@ -1,0 +1,77 @@
+﻿body {
+}
+.main
+{
+    width:100%;
+}
+.header
+{
+    border: 1px solid black;
+    height:30%; width:100%; 
+    background-color:azure;
+}
+.seventy 
+{
+   width:70%;
+   height:60%; 
+   background-color:aliceblue;
+   border: 1px solid black;
+}
+.thirty
+{
+   width:30%;
+   height:60%; 
+   background-color:azure;
+   border: 1px solid black;
+}   
+.sm_content
+{
+   height:60%; 
+   background-color:azure;
+   border: 1px solid black;
+} 
+.footer
+{
+     height:60%; 
+   background-color:azure;
+   border: 1px solid black;
+}
+.small_square
+{
+    border:1px solid #f8f8f8;
+}
+.height_button
+{
+    height:20%;
+}
+.width_button
+{
+}
+.blue
+{
+  color:0EA3F9;
+}
+.slider
+{ 
+   height:20%;
+}
+.slimborder
+{
+    border:1px solid gray;
+}
+.xerostripe
+{
+    color:#ade6d8;
+}
+.xerostripe_bg
+{
+    background-color:#ade6d8;
+}
+.clear_1m
+{
+    height:2em;
+}
+.blue_bg
+{ 
+    background-color:cornflowerblue;
+}

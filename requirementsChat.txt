@@ -1,0 +1,118 @@
+rk_live_u3hWQTUhK7XcOURX3Qm11PFm
+
+xero:
+
+pas: M@15
+
+https://app.xero.com/Application/Add
+http://www.xomastery.com/stripe-data/getting-stripe-transactional-data-into-xero/
+http://devdocs.magento.com/guides/m1x/api/rest/testing_rest_resources.html
+http://getbootstrap.com/2.3.2/scaffolding.html
+https://www.tutorialspoint.com/reactjs/
+https://stripe.com/docs/api/dotnet#customers
+
+Otuh
+https://gist.githubusercontent.com/anonymous/95a6bda3a11f6bb19d8da9a498b9a8ae/raw/17fbff3518a574c684347f856aa172e929c0f022/xero.aspx.cs
+
+//Xero
+
+https://developer.xero.com/documentation/getting-started/getting-started-guide
+https://developer.xero.com/
+http://nunit.org/docs/2.2/quickStart.html
+https://developer.xero.com/documentation/getting-started/getting-started-guide
+
+"https://api.xero.com/api.xro/2.0/BankTransactions??oauth_token = IB6TA1EZP7HGZENGJ9EZMM4PXCER0G&oauth_verifier=6966292&org=irE7GOpS2aYbxZXgLjURbm"
+
+"https://api.xero.com/api.xro/2.0/BankTransactions?oauth_token=6UOM6Q8DOZKFEXZNGLISM7ELYJ8C8T&oauth_verifier=633722&org=irE7GOpS2aYbxZXgLjURbm"
+
+"oauth_token=D19ECLEO0RBKKI4T3RJOE5XS3LROPC&oauth_verifier=2361805&org=irE7GOpS2aYbxZXgLjURbm"
+
+"<BankTransactions><BankTransaction><Type>RECEIVE</Type><Contact><Name>Robert knight</Name></Contact><Date>03/01/2018 19:55:00</Date><LineItems><LineItem><Description>EUROTRENDING</Description><Quantity>1</Quantity><UnitAmount>1995</UnitAmount><AccountCode>200</AccountCode></LineItem></LineItems><Reference>ch_1BgIKGH48shMvbMvxfhTqVog</Reference><BankAccount><Code>090-8007-006543</Code></BankAccount><Type>RECEIVE</Type><Contact><Name>Robert knight</Name></Contact><Date>03/01/2018 19:55:00</Date><LineItems><LineItem><Description>EUROTRENDING</Description><Quantity>1</Quantity><UnitAmount>1995</UnitAmount><AccountCode>200</AccountCode></LineItem></LineItems><Reference>ch_1BgIKGH48shMvbMvxfhTqVog</Reference><BankAccount><Code>090-8007-006543</Code></BankAccount><Type>RECEIVE</Type><Contact><Name>Robert knight</Name></Contact><Date>03/01/2018 19:55:00</Date><LineItems><LineItem><Description>EUROTRENDING</Description><Quantity>1</Quantity><UnitAmount>1995</UnitAmount><AccountCode>200</AccountCode></LineItem></LineItems><Reference>ch_1BgIKGH48shMvbMvxfhTqVog</Reference><BankAccount><Code>090-8007-006543</Code></BankAccount><Type>RECEIVE</Type><Contact><Name>Robert knight</Name></Contact><Date>03/01/2018 19:55:00</Date><LineItems><LineItem><Description>EUROTRENDING</Description><Quantity>1</Quantity><UnitAmount>1995</UnitAmount><AccountCode>200</AccountCode></LineItem></LineItems><Reference>ch_1BgIKGH48shMvbMvxfhTqVog</Reference><BankAccount><Code>090-8007-006543</Code></BankAccount><Type>RECEIVE</Type><Contact><Name>Robert knight</Name></Contact><Date>03/01/2018 19:55:00</Date><LineItems><LineItem><Description>EUROTRENDING</Description><Quantity>1</Quantity><UnitAmount>1995</UnitAmount><AccountCode>200</AccountCode></LineItem></LineItems><Reference>ch_1BgIKGH48shMvbMvxfhTqVog</Reference><BankAccount><Code>090-8007-006543</Code></BankAccount></BankTransaction><BankTransaction><Type>RECEIVE</Type><Contact><Name>Robert knight</Name></Contact><Date>03/01/2018 19:17:03</Date><LineItems><LineItem><Description>EUROTRENDING</Description><Quantity>1</Quantity><UnitAmount>9975</UnitAmount><AccountCode>200</AccountCode></LineItem></LineItems><Reference>ch_1BgHjXH48shMvbMvf1itcqOm</Reference><BankAccount><Code>090-8007-006543</Code></BankAccount><Type>RECEIVE</Type><Contact><Name>Robert knight</Name></Contact><Date>03/01/2018 19:17:03</Date><LineItems><LineItem><Description>EUROTRENDING</Description><Quantity>1</Quantity><UnitAmount>9975</UnitAmount><AccountCode>200</AccountCode></LineItem></LineItems><Reference>ch_1BgHjXH48shMvbMvf1itcqOm</Reference><BankAccount><Code>090-8007-006543</Code></BankAccount><Type>RECEIVE</Type><Contact><Name>Robert knight</Name></Contact><Date>03/01/2018 19:17:03</Date><LineItems><LineItem><Description>EUROTRENDING</Description><Quantity>1</Quantity><UnitAmount>9975</UnitAmount><AccountCode>200</AccountCode></LineItem></LineItems><Reference>ch_1BgHjXH48shMvbMvf1itcqOm</Reference><BankAccount><Code>090-8007-006543</Code></BankAccount><Type>RECEIVE</Type><Contact><Name>Robert knight</Name></Contact><Date>03/01/2018 19:17:03</Date><LineItems><LineItem><Description>EUROTRENDING</Description><Quantity>1</Quantity><UnitAmount>9975</UnitAmount><AccountCode>200</AccountCode></LineItem></LineItems><Reference>ch_1BgHjXH48shMvbMvf1itcqOm</Reference><BankAccount><Code>090-8007-006543</Code></BankAccount><Type>RECEIVE</Type><Contact><Name>Robert knight</Name></Contact><Date>03/01/2018 19:17:03</Date><LineItems><LineItem><Description>EUROTRENDING</Description><Quantity>1</Quantity><UnitAmount>9975</UnitAmount><AccountCode>200</AccountCode></LineItem></LineItems><Reference>ch_1BgHjXH48shMvbMvf1itcqOm</Reference><BankAccount><Code>090-8007-006543</Code></BankAccount></BankTransaction><BankTransaction><Type>RECEIVE</Type><Contact><Name>Robert knight</Name></Contact><Date>03/01/2018 18:30:05</Date><LineItems><LineItem><Description>EUROTRENDING</Description><Quantity>1</Quantity><UnitAmount>1995</UnitAmount><AccountCode>200</AccountCode></LineItem></LineItems><Reference>ch_1BgH05H48shMvbMv4disPEaT</Reference><BankAccount><Code>090-8007-006543</Code></BankAccount><Type>RECEIVE</Type><Contact><Name>Robert knight</Name></Contact><Date>03/01/2018 18:30:05</Date><LineItems><LineItem><Description>EUROTRENDING</Description><Quantity>1</Quantity><UnitAmount>1995</UnitAmount><AccountCode>200</AccountCode></LineItem></LineItems><Reference>ch_1BgH05H48shMvbMv4disPEaT</Reference><BankAccount><Code>090-8007-006543</Code></BankAccount><Type>RECEIVE</Type><Contact><Name>Robert knight</Name></Contact><Date>03/01/2018 18:30:05</Date><LineItems><LineItem><Description>EUROTRENDING</Description><Quantity>1</Quantity><UnitAmount>1995</UnitAmount><AccountCode>200</AccountCode></LineItem></LineItems><Reference>ch_1BgH05H48shMvbMv4disPEaT</Reference><BankAccount><Code>090-8007-006543</Code></BankAccount><Type>RECEIVE</Type><Contact><Name>Robert knight</Name></Contact><Date>03/01/2018 18:30:05</Date><LineItems><LineItem><Description>EUROTRENDING</Description><Quantity>1</Quantity><UnitAmount>1995</UnitAmount><AccountCode>200</AccountCode></LineItem></LineItems><Reference>ch_1BgH05H48shMvbMv4disPEaT</Reference><BankAccount><Code>090-8007-006543</Code></BankAccount><Type>RECEIVE</Type><Contact><Name>Robert knight</Name></Contact><Date>03/01/2018 18:30:05</Date><LineItems><LineItem><Description>EUROTRENDING</Description><Quantity>1</Quantity><UnitAmount>1995</UnitAmount><AccountCode>200</AccountCode></LineItem></LineItems><Reference>ch_1BgH05H48shMvbMv4disPEaT</Reference><BankAccount><Code>090-8007-006543</Code></BankAccount></BankTransaction></BankTransactions>"
+
+
+       <div class="row">
+            <div class="col-md-2 small_square xerostripe_bg">Menu</div>
+            <div class="col-md-10 small_square xerostripe_bg">
+                 <h2>API Access CRON - (Stripe to Xero imports)</h2>
+                         <div class="form-group">
+                             <label class="control-label col-sm-2" for="FileSource1">Shopify Src:</label>
+                              
+                                <div class="col-sm-10">   
+                                    <input id="FileSource1" name="FileSource1" type="file"  class="btn btn-default" style="width:40em;" runat="server"/>
+                                   <div class="row clear_1m"></div> 
+                                </div>
+                         </div>  
+                <div class="row clear_1m"></div>  
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="api_key">API Key:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="api_key" placeholder="Enter API Key" name="api_key" runat="server"/>
+                                <div class="row clear_1m"></div> 
+                                </div>
+                            </div>
+                            <div class="row clear_1m"></div>
+                          <div class="form-group">
+                            <label class="control-label col-sm-2" for="transaction">Transaction:</label>
+                            <div class="col-sm-10">          
+                                <input type="text" class="form-control" id="transaction" placeholder="enter_transaction" name="transaction" runat="server"/>
+                            </div>
+                            </div>
+                            <div class="form-group">        
+                                <div class="col-sm-offset-2 col-sm-10">
+                               
+                                </div>
+                            </div>
+                            <div class="form-group">        
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <div class="row clear_1m"></div> 
+                                    <button type="submit" class="btn btn-default" runat="server" onserverclick="AnalyseData_Click">Execute</button>
+                                <div class="row clear_1m"></div> 
+                                </div>
+                            <div class="row clear_1m"></div>  
+                            </div>
+                              <div class="row clear_1m"></div>
+                <div class="row clear_1m"></div> 
+                        </div>
+                    </div>
+
+
+[05:31:53 PM] Guido Silbert: That's good, as stated on the word doc we will need to define which accounts on xero we ll import which type of stripe transactions
+[05:32:07 PM] Barry Jone: ahhh, okay
+[05:32:10 PM] Barry Jone: so that means
+[05:32:18 PM] Barry Jone: if you want for example payments
+[05:32:30 PM] Barry Jone: then there should be an option that all payments only
+[05:32:32 PM] Barry Jone: correct?
+[05:32:51 PM] Barry Jone: and you wanted to process only refund, then all refun transations
+[05:32:53 PM] Guido Silbert: Let me send you a screnshoot of the shopify xero app
+[05:32:55 PM] Barry Jone: correct
+[05:32:58 PM] Guido Silbert: nono,
+[05:33:06 PM] Barry Jone: okay
+[05:33:09 PM] Barry Jone: yes send
+[05:35:29 PM] Guido Silbert: http://easycaptures.com/fs/uploaded/1242/4579454071.png
+[05:37:35 PM] Guido Silbert: We will need to define the "rules" on how each type of transaction should be imported to xero
+[05:37:51 PM] Barry Jone: oh okay
+[05:38:04 PM] Barry Jone: can you give me an example rule or could explain to one example
+[05:38:06 PM] Barry Jone: please
+[05:38:09 PM] Guido Silbert: and moreover, we will need to match each payment to the correct shopify order, but we will need to connect shopify and stripe for that
+[05:38:11 PM] Guido Silbert: Sure,
+[05:38:43 PM] Guido Silbert: Stripe payouts: Account in Xero where they go (Digibravo Payoneer account)
+[05:39:00 PM] Guido Silbert: Stripe transaction fees: Stripe fees
+[05:39:31 PM] Barry Jone: ahhh, okay
+[05:39:34 PM] Barry Jone: so meaning
+[05:39:58 PM] Barry Jone: my first entrypoint wouild be data taken from shopify and match that to stripe
+[05:40:02 PM] Barry Jone: correct?
+[05:40:16 PM] Barry Jone: then after that input the details to xero
+[05:40:23 PM] Barry Jone: correct?
+[05:41:13 PM] Guido Silbert: Ideally yes, because otherwise we wont be able to match the stripe transactions to the corresponding order with 100% accuracy, we would have to do it using estimations, for example date or time
+[05:43:08 PM] Barry Jone: yes okay
+[05:43:19 PM] Barry Jone: so my next question is
+[05:43:57 PM] Barry Jone: can you give me access to the shopify or you can give me a sample database where the shopify transactions I can view and test pull and match with stripe
+[05:47:24 PM] Guido Silbert: I will look how to give you access so we can do it via API
+[05:47:38 PM] Guido Silbert: but in the meanwhile I will send you the order export
+[05:47:45 PM] Barry Jone: yes okay
+[05:48:11 PM] Guido Silbert: Column AW is the linking point to Stripe 
+
+https://developer.xero.com/documentation/auth-and-limits/oauth-issues
+https://developer.xero.com/documentation/api/v2-release-notes#2.172
+https://developer.xero.com/documentation/api/http-response-codes
+https://community.xero.com/developer/discussion/5494773

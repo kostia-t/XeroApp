@@ -1,0 +1,68 @@
+<BankTransactions>
+   <Date>131590519980000000</Date>
+   <Amount>Stripe</Amount>
+   <Payee>1995</Payee>
+   <Description>The SHOP</Description>
+   <Reference>txn_1BeUEGH48shMvsdfg34gsdfgWZO</Reference>
+   <Check Number></Check Number>
+   <Date>131590519980000000</Date>
+   <Amount>Stripe</Amount>
+   <Payee>1995</Payee>
+   <Description>The SHOP</Description>
+   <Reference>txn_1BeUEGH48sfdgw43sdfgWZO</Reference>
+   <Check Number></Check Number>
+   <Date>131590519980000000</Date>
+   <Amount>Stripe</Amount>
+   <Payee>1995</Payee>
+   <Description>The SHOP</Description>
+   <Reference>txn_1BeUEGH48shMv89rt8sdfgsgZO</Reference>
+   <Check Number></Check Number>
+ </BankTransactions>
+
+function:
+ public string postXeroXMLData(string destinationUrl, string requestXml,string AccToken)
+    {
+        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(destinationUrl);
+        
+        byte[] bytes;
+        bytes = System.Text.Encoding.ASCII.GetBytes(requestXml);
+        request.ContentType = "text/xml; encoding='utf-8'";
+        request.ContentLength = bytes.Length;
+        request.Headers.Add("Authorization", "Bearer " + AccToken);
+        request.Timeout = -1;
+        request.Method = "POST";
+        Stream requestStream = request.GetRequestStream();
+        requestStream.Write(bytes, 0, bytes.Length);
+        requestStream.Close();
+        HttpWebResponse response;
+        response = (HttpWebResponse)request.GetResponse();
+        if (response.StatusCode == HttpStatusCode.OK)
+        {
+            Stream responseStream = response.GetResponseStream();
+            string responseStr = new StreamReader(responseStream).ReadToEnd();
+            return responseStr;
+        }
+        return null;
+    }
+
+Sample XML Generated:
+"<BankTransactions>
+   <Date>131590519980000000</Date>
+   <Amount>Stripe</Amount>
+   <Payee>1995</Payee>
+   <Description>The SHOP</Description>
+   <Reference>txn_1BeUEGH48shMvsdfg34gsdfgWZO</Reference>
+   <Check Number></Check Number>
+   <Date>131590519980000000</Date>
+   <Amount>Stripe</Amount>
+   <Payee>1995</Payee>
+   <Description>The SHOP</Description>
+   <Reference>txn_1BeUEGH48sfdgw43sdfgWZO</Reference>
+   <Check Number></Check Number>
+   <Date>131590519980000000</Date>
+   <Amount>Stripe</Amount>
+   <Payee>1995</Payee>
+   <Description>The SHOP</Description>
+   <Reference>txn_1BeUEGH48shMv89rt8sdfgsgZO</Reference>
+   <Check Number></Check Number>
+ </BankTransactions>"

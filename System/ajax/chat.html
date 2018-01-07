@@ -1,0 +1,256 @@
+<div id="chatwindows" class="chatwindows"></div><!--chatwindows-->
+
+<div class="onlineuserpanel">
+    <div id="chatscroll" class="onlineusers">
+        <ul>
+            <li id="u-1" class="on"><img src="images/photos/thumb2.png" /> <span>Draniem Daamul</span></li>
+            <li id="u-2" class="on"><img src="images/photos/thumb3.png" /> <span>Zaham Sindilmac</span></li>
+            <li id="u-3"><img src="images/photos/thumb4.png" /> <span>Weno Carasbong</span></li>
+            <li id="u-4" class="on"><img src="images/photos/nothumb.png" /> <span>Sarce Sonjovan</span></li>
+            <li id="u-5" class="on"><img src="images/photos/thumb5.png" /> <span>Lando Losopa</span></li>
+            <li id="u-6"><img src="images/photos/thumb6.png" /> <span>Kirbs Dulaaven</span></li>
+            <li id="u-7" class="on"><img src="images/photos/thumb7.png" /> <span>Lee Cerona</span></li>
+            <li id="u-8"><img src="images/photos/thumb8.png" /> <span>Jane dela Cruz</span></li>
+            <li id="u-9" class="on"><img src="images/photos/thumb2.png" /> <span>Buram Daamul</span></li>
+            <li id="u-10" class="on"><img src="images/photos/thumb3.png" /> <span>Kikoy Sindilmac</span></li>
+            <li id="u-11"><img src="images/photos/thumb4.png" /> <span>Hela Carasbong</span></li>
+            <li id="u-12" class="on"><img src="images/photos/nothumb.png" /> <span>Inday Sonjovan</span></li>
+            <li id="u-13" class="on"><img src="images/photos/thumb5.png" /> <span>Ondoy Losopa</span></li>
+            <li id="u-14"><img src="images/photos/thumb6.png" /> <span>Lalan Dulaaven</span></li>
+            <li id="u-15" class="on"><img src="images/photos/thumb7.png" /> <span>Lago Cerona</span></li>
+            <li id="u-16"><img src="images/photos/thumb8.png" /> <span>Heha dela Cruz</span></li>
+            <li id="u-17" class="on"><img src="images/photos/thumb2.png" /> <span>Susa Daamul</span></li>
+            <li id="u-18" class="on"><img src="images/photos/thumb3.png" /> <span>Cesa Sindilmac</span></li>
+            <li id="u-19"><img src="images/photos/thumb4.png" /> <span>Paul Carasbong</span></li>
+            <li id="u-20" class="on"><img src="images/photos/nothumb.png" /> <span>Wilie Sonjovan</span></li>
+            <li id="u-21" class="on"><img src="images/photos/thumb5.png" /> <span>Dyann Losopa</span></li>
+            <li id="u-22"><img src="images/photos/thumb6.png" /> <span>Annie Dulaaven</span></li>
+            <li id="u-23" class="on"><img src="images/photos/thumb7.png" /> <span>Roger Cerona</span></li>
+            <li id="u-24"><img src="images/photos/thumb8.png" /> <span>Ruper dela Cruz</span></li>
+            <li id="u-25" class="on"><img src="images/photos/thumb2.png" /> <span>Brench Daamul</span></li>
+            <li id="u-26" class="on"><img src="images/photos/thumb3.png" /> <span>Renove Sindilmac</span></li>
+            <li id="u-27"><img src="images/photos/thumb4.png" /> <span>Mikaeul Carasbong</span></li>
+            <li id="u-28" class="on"><img src="images/photos/nothumb.png" /> <span>Billie Sonjovan</span></li>
+            <li id="u-29" class="on"><img src="images/photos/thumb5.png" /> <span>Koko Losopa</span></li>
+            <li id="u-30"><img src="images/photos/thumb6.png" /> <span>Marle Dulaaven</span></li>
+        </ul>
+    </div><!--onlineusers-->
+</div><!--onlineuserpanel-->
+
+<script type="text/javascript">
+    
+    jQuery(document).ready(function(){
+        
+        // chat slim scroll
+        if(jQuery('#chatscroll').length > 0) {
+           
+            jQuery('#chatscroll').slimscroll({
+                color: '#999',
+                size: '5px',
+                width: '200px',
+                height: '100%'
+            });
+           
+            jQuery('#chatscroll li').click(function() {
+                
+                // store user ids in a cookie
+                var i = jQuery(this).attr('id');
+                if(jQuery.cookie('user-selected')) {
+                    var c = jQuery.cookie('user-selected').split(',');
+                    
+                    // we make sure that what we inserted is not yet existing
+                    var ue = false;
+                    for(a = 0; a < c.length; a++) {
+                        if(c[a] == i) ue = true;
+                    }
+                    
+                    if(!ue) {
+                        c.push(i);
+                        jQuery.cookie('user-selected', c.join(','), { path: '/' });
+                    }
+                    
+                } else {
+                    jQuery.cookie('user-selected', i, { path: '/' });
+                }
+            
+                var n = jQuery(this).find('span').text();
+                var id = jQuery(this).attr('id');
+                var userxist = checkUser(id);
+                  
+                var wincount = jQuery('#chatwindows .chatwin').length;
+                if(wincount < 4) {
+                    
+                    // check if user already opened a window
+                    if(userxist == false) {
+                        var chatwin = appendUser(n,id);
+                        jQuery('#chatwindows').append(chatwin);
+                    }
+                     
+                } else {
+                     
+                    if(jQuery('#chatwinlist').length > 0) {
+                        
+                        if(!userxist) {
+                            jQuery('#chatwinlist ul').append('<li id="c_'+ id +'"><h4>'+ n +'</h4></li>').show();
+                            jQuery('#chatwinlist i').text(jQuery('#chatwinlist li').length);
+                        }
+                        
+                    } else {
+                        
+                        if(!userxist) {
+                            jQuery('#chatwindows').append('<div id="chatwinlist"><span class="iconfa-comment"></span><i>1</i></div>');
+                            jQuery('#chatwinlist').append('<ul><li id="'+ id +'"><h4>'+ n +'</h4></li></ul>');
+                        }
+                        
+                    }
+                     
+                }
+            }); // end of #chatscroll li click
+            
+               
+            jQuery('.chatwin .close').live('click', function(){
+                  
+                var p = jQuery(this).parent().remove();
+                    
+                if(jQuery('#chatwinlist li').length > 0) {
+                    
+                  var n = jQuery('#chatwinlist li:last-child h4').text();
+                  var id = jQuery('#chatwinlist li:last-child').attr('id');
+                  var chatwin = appendUser(n,id, false);
+                  
+                  jQuery(chatwin).insertBefore('#chatwinlist');
+                  jQuery('#chatwinlist li:last-child').remove();
+                  
+                  jQuery('#chatwinlist i').text(jQuery('#chatwinlist li').length);
+                  
+                } 
+                
+                if(jQuery('#chatwinlist li').length == 0)
+                    jQuery('#chatwinlist').remove();
+                    
+                // remove from cookies
+                var md = jQuery(this).parent().attr('id').split('_');
+                if(jQuery.cookie('user-selected')) {
+                    
+                    var nc = [];
+                    var oc = jQuery.cookie('user-selected').split(',');
+                    for(a = 0; a < oc.length; a++) {
+                        if(oc[a] != md[1]) nc.push(oc[a]);
+                    }
+                    jQuery.cookie('user-selected', nc.join(','), { path: '/' });
+                }
+                
+                
+            });
+            
+            jQuery('#chatwinlist span').live('click', function(){
+                var p = jQuery(this).parent().find('ul');
+                if(p.is(':visible')) p.hide(); else p.show();
+            });
+            
+            
+            jQuery('#chatwinlist li').live('click', function(){
+                
+                var n = jQuery(this).find('h4').text();
+                var id = jQuery(this).attr('id');
+                var chatwin = appendUser(n,id);
+                var cu = jQuery('.chatwin:nth-child(4) h4').text();
+                
+                jQuery(this).remove();
+                jQuery('#chatwinlist ul').append('<li><h4>'+ cu +'</h4></li>');
+                
+                jQuery(chatwin).insertBefore('#chatwinlist');
+                jQuery('.chatwin:nth-child(4)').remove();
+                
+            });
+            
+            
+            if(jQuery.cookie('user-selected')) {
+                var uc = jQuery.cookie('user-selected').split(',');
+                
+                var maxwin = 4;
+                if(jQuery(document).width() < 769) maxwin = 2;
+                if(jQuery(document).width() < 641) maxwin = 1;
+                alert(jQuery(document).width());
+                
+                for(a = 0; a < uc.length; a++) {
+                    var n = jQuery('#'+uc[a]).find('span').text();
+                    var id = jQuery('#'+uc[a]).attr('id');
+                    var userxist = checkUser(id);
+                    if(a < maxwin) {
+                        if(!userxist) {
+                            var chatwin = appendUser(n,id,false);
+                            jQuery('#chatwindows').append(chatwin);
+                        }
+                        
+                    } else {
+                        
+                        if(jQuery('#chatwinlist').length > 0) {
+                        
+                            if(!userxist) {
+                                jQuery('#chatwinlist ul').append('<li id="'+ id +'"><h4>'+ n +'</h4></li>');
+                                jQuery('#chatwinlist').find('i').text(jQuery('#chatwinlist ul li').length);
+                            }
+                        
+                        } else {
+                        
+                            if(!userxist) {
+                                jQuery('#chatwindows').append('<div id="chatwinlist"><span class="iconfa-comment"></span><i>1</i></div>');
+                                jQuery('#chatwinlist').append('<ul><li id="cu-'+ id +'"><h4>'+ n +'</h4></li></ul>');
+                            }
+                        
+                        }
+                    }
+                }
+            }
+            
+            
+            jQuery('.chatinput').live('keypress', function(e){
+                var t = jQuery(this);
+                var v = t.val();
+                if(e.which == 13) {
+                    t.val('');
+                    t.parents('.chatwin').find('.chatmsg').append('<li><strong>You:</strong> '+ v +'</li>');
+                }
+            });
+            
+           
+        } // end of slimscroll length
+        
+        function checkUser(id) {
+                
+            userxist = false;
+            jQuery('#chatwindows h4').each(function(){
+                var i = jQuery(this).parent().attr('id').split('_');
+                if(id == i[1]) {
+                    userxist = true;
+                    var p = jQuery(this).parent();
+                    p.removeClass('animate0 bounceInUp')
+                    .addClass('animate0 bounce')
+                    .on('webkitAnimationEnd oanimationend oAnimationEnd msAnimationEnd animationend',function(){
+                        p.removeClass('animate0 bounce');	
+                    });
+                }
+            });
+            return userxist;
+        }
+            
+        function appendUser(n,id,animate) {
+            
+            var a = (animate == null || animate == true)? 'animate0 bounceInUp' : '';
+                
+            var chatwin = '<div id="c_'+id+'" class="chatwin '+ a +'">'
+                        + '<a class="close">&times;</a>'
+                        + '<h4>'+ n +'</h4>'
+                        + '<ul class="chatmsg"></ul>'
+                        + '<div class="chattext">'
+                        + '<input name="text" class="chatinput input-block-level" placeholder="Type message and hit enter..." />'
+                        + '</div><!--chattext-->'
+                        + '</div><!--chatwin-->';
+                   
+            return chatwin;
+                
+        }
+        
+    });
+</script>
